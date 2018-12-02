@@ -1,0 +1,21 @@
+/* Fastcommerce - Store 2 Async - 2018 (v2) */
+
+/* Colors */
+#idListProdCrossFC li .EstCatProdCross .EstCatNameProdCross{color:<tag-FCCSSSecondMainColor>}
+.activeCat{background:<tag-FCCSSSecondMainColor>}
+.CatSeeMoreFC{background:<tag-FCCSSSecondMainColor>}
+.zFPromoNotFound{background:<tag-FCCSSMainColor>}
+#ContentFil .SetaDireita:before{border-left:5px solid <tag-FCCSSMainColor>}
+.HeaderCartItensPosition .HeaderCartNumberProds{background-color:<tag-FCCSSMainColor>}
+.ProductDet #idCommentsClickFC a{background:<tag-FCCSSMainColor>}
+.ProductDet #idEstNoCommentsClickProdOpFC a {background:<tag-FCCSSMainColor>}
+#idTxtRemoveFilters a{background-color:<tag-FCCSSMainColor>;border:0 solid <tag-FCCSSMainColor>}
+.FCError404h1{color:<tag-FCCSSSecondMainColor>}
+.fc-badge-product-sale{background-color:<tag-FCCSSMainColor>}
+@media only screen and (max-width:1024px){
+  .home-banner-one-separator-left div a,.home-banner-two-separator-left div a{background:<tag-FCCSSMainColor>;border:2px solid <tag-FCCSSMainColor>}
+  .home-banner-one-separator-left div a:hover,.home-banner-two-separator-left div a:hover{background:<tag-FCCSSMainColor>;border:2px solid <tag-FCCSSMainColor>} 
+}
+@media only screen and (min-width:1025px){
+  .home-banner-one-separator-left div a:hover,.home-banner-two-separator-left div a:hover{background:<tag-FCCSSMainColor>;border:2px solid <tag-FCCSSMainColor>}
+}

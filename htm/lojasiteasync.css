@@ -432,6 +432,9 @@
     padding-right: 10px;
   }
 }
+#search-form-bar #autocomplete-form-bar {
+  position: relative;
+}
 
 #search-form-bar input#autocomplete {
   display: inline-block;
@@ -439,10 +442,12 @@
   padding: 0px 15px;
   border-radius: 15px;
   font-size: 18px;
+  height: 40px;
 }
 #search-form-bar button#search-button {
   background: no-repeat;
-  right: 0px;
+  position: absolute;
+  right: -20px;
   top: 28px;
   height: 38px;
 }

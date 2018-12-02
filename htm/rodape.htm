@@ -1,0 +1,129 @@
+</div>
+<!-- End Aside BarraEsquerda.htm - Open BarraTopo.htm - Don't remove -->
+
+<!-- Begin Page History -->
+<div class="footer-history">
+  <div id="idPageHistory"></div>
+</div>
+<!-- End Page History -->
+
+<div class="FooterMainBarFC">
+  <div class="footer-mainbar-menu-container">
+    <div class="footer-mainbar-menu-one ">
+      <h4 class="font-bold footer-accordion">Produtos</h4>
+      <ul class="footer-menu font-regular footer-accordion-panel">
+        <li><a href="/">Home</a></li>
+        <li><a href="/categorias.asp?idloja=<IDLojaNum>"><Categorias></a></li>
+        <li><a href="/prod,idloja,<IDLojaNum>,promocao,1,ofertas.htm">Promoções</a></li>
+        <li><a href="/prod,idloja,<IDLojaNum>,lancamento,1,novidades.htm">Lançamentos</a></li>
+        <li><a href="/page,idloja,<IDLojaNum>,arq,destaques.htm">Destaques</a></li>
+        <li><a href="/buscaavancada.asp?idloja=<IDLojaNum>">Busca detalhada</a></li>
+      </ul>
+    </div>
+    <div class="footer-mainbar-menu-two">
+      <h4 class="font-bold footer-accordion">Minha conta</h4>
+      <ul class="footer-menu font-regular footer-accordion-panel">
+        <li><a href="/addProduto.asp?idloja=<IDLojaNum>">Carrinho de compras</a></li>
+        <li><a href="/account.asp?idloja=<IDLojaNum>&orders=1#Orders">Meus pedidos</a></li>
+        <li><a href="/account.asp?idloja=<IDLojaNum>&register=1#Register">Cadastro</a></li>
+        <li><a href="/cadastro.asp?idloja=<IDLojaNum>&pp=3" id="idLinkLoginFC">Login</a></li>
+        <li><a href="/indique.asp?idloja=<IDLojaNum>">Indique a loja</a></li>
+        <li><a href="/newsletter.asp?idloja=<IDLojaNum>">Newsletter</a></li>
+      </ul>
+    </div>
+    <div class="footer-mainbar-menu-three">
+      <h4 class="font-bold footer-accordion">Informações</h4>
+      <ul class="footer-menu font-regular footer-accordion-panel">
+        <li><a href="/ajuda.asp?idloja=<IDLojaNum>">Central de ajuda</a></li>
+        <li><a href="/noticias.asp?idloja=<IDLojaNum>">Notícias</a></li>
+        <li><a href="/ajuda.asp?idloja=<IDLojaNum>#Entregas">Entrega</a></li>
+        <li><a href="/ajuda.asp?idloja=<IDLojaNum>#Seguranca">Segurança</a></li>
+        <li><a href="/faleconosco.asp?idloja=<IDLojaNum>">Fale conosco</a></li>
+      </ul> 
+    </div>
+    <div class="footer-mainbar-menu-four">
+      <div class="footer-mainbar-newsletter-field">
+        <h4 class="font-bold">Newsletter</h4>
+          <p class="footer-newsletter-text font-regular">Inscreva-se para receber ofertas e descontos!</p>
+        <span style="white-space:nowrap;">
+          <form name="FormCadNewsletter" method="GET" action="/newsletter.asp" onsubmit="return ValidaCadNewsletter(this);">
+          <input type="hidden" name="IDLoja" value="<IDLojaNum>">
+          <input type="hidden" name="Y" value="<Y>">
+          <input type="hidden" name="FormatoHTML" value="True">
+          <span class="FooterInputPosition"><input type="email" name="Email" class="FooterNewsletterInput" aria-label="Digite seu e-mail" placeholder="Digite seu e-mail"></span>
+          <span class="FooterInputBtnPosition"><button class="footer-newsletter-submit-button" type="submit" name="ok" value="Enviar"><img src="<BaseLoja>images/icon-newsletter-arrow.svg?cccfc=1" width="25" height="25" alt="Enviar Newsletter"></button></span>
+          </form>
+        </span>
+      </div>
+      <div class="footer-payment-container">
+        <h4 class="font-bold">Pagamento</h4>
+        <ul class="FooterULPaymentFC">
+          <li><img src="<PathTo file="images/icpagtovs_3.png">" width="50" height="32" alt="Visa"></li>
+          <li><img src="<PathTo file="images/icpagtomc_3.png">" width="50" height="32" alt="MasterCard"></li>
+          <li><img src="<PathTo file="images/icpagtobb_3.png">" width="50" height="32" alt="Boleto Bancário"></li>
+          <li><img src="<PathTo file="images/icpagtodb_3.png">" width="50" height="32" alt="Depósito Bancário"></li>
+        </ul>
+      </div>
+      <div class="footer-security-container">
+        <h4 class="font-bold">Segurança</h4>
+        <a href="/ajuda.asp?idloja=<IDLojaNum>#Seguranca"><img src="/images/100_https.svg?cccfc=1" height="45" alt="Seu pedido com Segurança" title="Site Seguro"></a>
+        <a href="https://www.google.com/transparencyreport/safebrowsing/diagnostic/?hl=pt-BR#url=<StoreDomain>" target="_blank" rel="noopener"><img src="/images/Google_Loja_Segura.svg?cccfc=1" height="45" alt="Seu pedido com Segurança" title="Site Seguro"></a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="FooterMainBarFC-container-socialshare">
+  <div class="FooterMainBarFC-socialshare">
+    <ul class="footer-share-container">
+      <li id="idShareFooter">
+        <span><a href="/indique.asp?idloja=<IDLojaNum>"><img width="43" height="43" alt="Seu pedido com Segurança" title="Recomende a loja" src="<PathTo file="images/iconprodemail.svg">"></a></span>
+        <span><ShareGooglePlus></span>
+        <span><ShareFacebook></span>
+        <span><ShareTwitter></span>
+        <span><SharePinterest></span>
+      </li>
+    </ul>
+  </div>
+</div>
+<div class="FooterMainBarFC-container">
+  <div class="FooterCompanyBoxFC">
+    <p><b><CompanyName></b> CNPJ <CompanyDocument></p>
+    <p><CompanyAddress></p>
+  </div>
+</div>
+<div class="FooterMainBarFC-container">
+  <div class="FooterTecBoxFC">
+    <p>Copyright © <span id="FooterFullYear"></span> <strong><NomeLoja></strong></p>
+    <p><a href="https://www.fastcommerce.com.br/home.asp?origem=tecfc&utm_source=Lojas+Fastcommerce&utm_medium=Selo&utm_campaign=Tecnologia+Fastcommerce" target="_blank" rel="noopener">Tecnologia de comércio eletrônico <strong>Fastcommerce</strong></a></p>
+  </div>
+</div>
+
+<!-- Includes -->
+<script src='<PathTo file="htm/lojalib.js">'></script>
+<script>FCLib$.loadAsyncCSS('<PathTo file="htm/css/jquery_ui.css">');</script>
+<script>FCLib$.loadAsyncCSS('/inc.asp?f=lojasiteasync.css&y=<Y>');</script>
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.9.2/jquery-ui.min.js" defer></script>
+<script src='<PathTo file="htm/js/autosuggest.js">' defer></script>
+<!--<script src='<PathTo file="htm/js/quantity_prod.js">' defer></script>-->
+
+<script>
+sF$.fnLoginUserName("<NomeCliente>","<FotoCliente>");
+fnFooter();fnSpeechRecognitionIOS();fnNewsVoiceSearch();sF$.fnCalculateQtyCart();fnFooterAccordion();fnChangeDivMenuPosition();
+FCLib$.onReady(FCLib$.execWaveInterchange);
+if(FC$.Page=="Cart" && (FC$.TypeFrt==3 || FC$.TypeFrt==4)){
+  var iValorCesta=<ValorCesta>;
+  fnCustomizeCart();
+}
+WebFontConfig = {
+  google:{families:['Nunito:400,700']}
+};
+(function() {
+  var wf = document.createElement('script');
+  wf.src = 'https://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+  wf.type = 'text/javascript';
+  wf.async = 'true';
+  var s = document.getElementsByTagName('script')[0];
+  s.parentNode.insertBefore(wf, s);
+})();
+</script>

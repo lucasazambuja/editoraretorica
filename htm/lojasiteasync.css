@@ -394,7 +394,7 @@
   font-family: 'Roboto', sans-serif;
 }
 html {
-  overflow-x: hidden;
+  overflow-x: hidden !important;
 }
 .container {
   max-width: 1490px;

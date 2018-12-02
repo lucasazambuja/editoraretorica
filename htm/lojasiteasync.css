@@ -390,6 +390,9 @@
 }
 
 /* CUSTOM CSS */
+* {
+  font-family: 'Roboto', sans-serif !important;
+}
 html {
   overflow-x: hidden;
 }

@@ -1,0 +1,21 @@
+<style>#idTxtPedConfirmadoFC{height:30px;padding:10px;background-color:#007dd4;color:#fcfcfc;font-size:14pt;}#idDadosPagtoFC{font-size:9pt;}#EstNomePagto{color:#555555;font-size:11pt;font-weight:bold;}#PassosCompra,.idTxtPrintFC{display:none;}</style>
+<script type="text/javascript">
+if(FC$.Page!="Checkout"){
+  var iFormaPagto="<IDFormaPagamento>";
+  
+  if(iFormaPagto=="3"){ /*Cartão de crédito*/
+    var sFormaPagto="<FormaPagamento> (<TipoCartao>)"
+    setTimeout("document.getElementById('idDadosPagtoTitFC').innerHTML='<td class=EstTabTopo colspan=2 align=center>Forma de pagamento</td>';",100); /*Altera titulo da parte inferior dos dados para pagamento */
+    }
+    else{
+    var sFormaPagto="<FormaPagamento>"
+    setTimeout("document.getElementById('idDadosPagtoTitFC').style.display='none';",100); /*Altera titulo da parte inferior dos dados para pagamento */
+  }
+  
+  var sDadosPagto="<br><br><table width=97% align=center class=EstTabPedido><tr height=25><td class=EstTabPedidoTit align=center>Dados para pagamento</td></tr><tr><td align=center><br><span id=EstNomePagto>"+ sFormaPagto +"</span><br><br>"+ document.getElementById('idDadosPagtoFC').innerHTML +"</td></tr></table>"; /*Instruções e botão para pagamento*/
+  var sBannerEbit="";  /*Banner do e-bit */
+  
+  setTimeout("document.getElementById('idDadosPagtoFC').innerHTML='';",10); /*Remove da parte inferior os dados para pagamento */
+  setTimeout("document.getElementById('idTopoConfirmacaoFC').innerHTML=sDadosPagto+sBannerEbit+'<br><br><span class=Titulos>Informações do seu pedido:</span>';",10);  /*Insere no topo da página de pedido confirmado as instruções para pagamento + banner do ebit */
+}
+</script>

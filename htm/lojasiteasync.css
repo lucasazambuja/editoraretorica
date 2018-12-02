@@ -391,7 +391,7 @@
 
 /* CUSTOM CSS */
 * {
-  font-family: 'Roboto', sans-serif !important;
+  font-family: 'Roboto', sans-serif;
 }
 html {
   overflow-x: hidden;
@@ -411,6 +411,7 @@ html {
   font-size: 0.9em;
   color: #96989A;
   padding-right: 20px;
+  font-family: 'Roboto', sans-serif;
 }
 .hidden {
   display: none;

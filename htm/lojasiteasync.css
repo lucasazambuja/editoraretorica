@@ -450,10 +450,14 @@ html, body {
 #bar-icons span i:hover {
   cursor: pointer;
 }
+.top-bar > span > .spacing {
+  padding-right: 10px;
+}
 @media only screen and (max-width: 576px) {
   .top-bar > span {
     font-size: 0.7em;
     padding-right: 10px;
+    text-align: center;
   }
 }
 #search-form-bar #autocomplete-form-bar {

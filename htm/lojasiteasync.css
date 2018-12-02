@@ -450,6 +450,7 @@
   right: -20px;
   top: 28px;
   height: 38px;
+  border: none;
 }
 #search-form-bar button#search-button > img {
   opacity: 1;

@@ -461,11 +461,7 @@
 
 @media only screen and (max-width: 576px) {
   #search-form-bar input#autocomplete {
-    display: inline-block;
-    width: 100%;
-    border-radius: 15px;
-    font-size: 18px;
-    height: 40px;
+    padding: 0 5px;
   }
   #search-form-bar button#search-button {
     display: none;

@@ -408,6 +408,11 @@
   text-align: right;
   line-height: 100px;
 }
+#bar-top-logo {
+  max-height: 100px;
+  vertical-align: middle;
+  margin: 0 auto;
+}
 .logo img {
   width: 100%;
 }

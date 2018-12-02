@@ -429,6 +429,9 @@
   #bar-head {
     line-height: 60px;
   }
+  #bar-top-logo {
+    margin-top: 10px;
+  }
 }
 #bar-icons span i {
   font-size: 26px;

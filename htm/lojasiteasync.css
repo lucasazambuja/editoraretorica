@@ -379,6 +379,15 @@
 .mx-auto {
   margin-left: auto !important;
 }
+.text-center {
+  text-align: center;
+}
+
+@media only screen and (max-width: 576px) {
+  .xs-hidden {
+    display: none !important;
+  }
+}
 
 /* CUSTOM CSS */
 .container {
@@ -449,6 +458,20 @@
   font-size: 18px;
   height: 40px;
 }
+
+@media only screen and (max-width: 576px) {
+  #search-form-bar input#autocomplete {
+    display: inline-block;
+    width: 100%;
+    border-radius: 15px;
+    font-size: 18px;
+    height: 40px;
+  }
+  #search-form-bar button#search-button {
+    display: none;
+  }
+}
+
 #search-form-bar button#search-button {
   background: no-repeat;
   position: absolute;

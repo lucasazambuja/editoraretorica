@@ -19,3 +19,76 @@
 @media only screen and (min-width:1025px){
   .home-banner-one-separator-left div a:hover,.home-banner-two-separator-left div a:hover{background:<tag-FCCSSMainColor>;border:2px solid <tag-FCCSSMainColor>}
 }
+
+/* CUSTOM CSS */
+.container {
+  max-width: 1490px;
+}
+.top-bar {
+  min-height: 40px;
+  display: inline-block;
+  width: 100%;
+  background: #616268;
+  text-align: right;
+}
+.top-bar > span {
+  line-height: 40px;
+  font-size: 0.9em;
+  color: #96989A;
+  padding-right: 20px;
+}
+.hidden {
+  display: none;
+}
+#bar-head {
+  min-height: 100px;
+  display: inline-block;
+  width: 100%;
+  background: #00A859;
+  text-align: right;
+  line-height: 100px;
+}
+.logo img {
+  width: 100%;
+}
+@media only screen and (max-width: 576px) {
+  #bar-head {
+    line-height: 60px;
+  }
+}
+#bar-icons span i {
+  font-size: 26px;
+  color: #fff;
+  padding: 0px 20px;
+  position: relative;
+  top: 5px;
+}
+#bar-icons span i:hover {
+  cursor: pointer;
+}
+@media only screen and (max-width: 576px) {
+  .top-bar > span {
+    font-size: 0.7em;
+    padding-right: 10px;
+  }
+}
+
+#search-form-bar input#autocomplete {
+  display: inline-block;
+  width: 100%;
+  padding: 0px 15px;
+  border-radius: 15px;
+  font-size: 18px;
+}
+#search-form-bar button#search-button {
+  background: no-repeat;
+  right: 0px;
+  top: 28px;
+  height: 38px;
+}
+#search-form-bar button#search-button > img {
+  opacity: 1;
+  width: 45px;
+  height: auto;
+  display: inline-block;
+}

@@ -412,8 +412,6 @@ html, body {
   color: #96989A;
   padding-right: 20px;
   font-family: 'Roboto', sans-serif;
-  display: inline-block;
-  width: 100%;
 }
 .hidden {
   display: none;

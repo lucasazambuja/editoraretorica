@@ -452,6 +452,7 @@ html, body {
 }
 .top-bar > span > .spacing {
   padding-right: 10px;
+  display: inline-block;
 }
 @media only screen and (max-width: 576px) {
   .top-bar > span {

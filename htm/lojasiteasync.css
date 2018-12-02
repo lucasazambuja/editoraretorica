@@ -390,6 +390,9 @@
 }
 
 /* CUSTOM CSS */
+html {
+  overflow-x: hidden;
+}
 .container {
   max-width: 1490px;
 }

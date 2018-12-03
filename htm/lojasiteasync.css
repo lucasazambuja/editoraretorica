@@ -603,6 +603,7 @@ html, body {
 }
 .DivHomeImagemProd > a {
   display: inline-block;
+  text-align: left;
 }
 .DivHomeImagemProd, .DivProductListImagemProd {
   height: auto;
@@ -648,5 +649,5 @@ html, body {
 }
 .badgesProd {
   position: absolute;
-  right: -40px;
+  right: -10px;
 }

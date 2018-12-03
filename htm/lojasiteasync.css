@@ -464,7 +464,6 @@ html, body {
 }
 #bar-icons .dropdown-menu {
   width: 230px;
-  top: -30px !important;
   padding: 10px;
   margin-left: -50px;
 }

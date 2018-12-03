@@ -455,7 +455,7 @@ html, body {
 #bar-icons span i:hover {
   cursor: pointer;
 }
-#bar-icons .bootstrap-style .dropdown-item {
+.bootstrap-style .dropdown-item {
   line-height: 2em;
 }
 

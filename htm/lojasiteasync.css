@@ -455,6 +455,16 @@ html, body {
 #bar-icons span i:hover {
   cursor: pointer;
 }
+#bar-icons .bootstrap-style .dropdown-item {
+  line-height: 2em;
+}
+
+#bar-icons .bootstrap-style .dropdown-menu {
+  width: 230px;
+  top: -30px !important;
+  padding: 10px;
+  margin-left: -50px;
+}
 .top-bar > span > .spacing {
   padding-right: 10px;
   display: inline-block;

@@ -534,3 +534,8 @@ html, body {
   position: relative;
   right: 10px;
 }
+#headerSidenav a {
+  text-transform: uppercase;
+  font-weight: normal;
+  font-size: 16px;
+}

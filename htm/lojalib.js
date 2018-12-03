@@ -330,7 +330,7 @@ var sF$=(function(){
   function fnHideShowBannersHome(){
     var FCHideHomeBanners = document.getElementById('FC-HideHomeBanners');
     var FCShowHomeBanners = document.getElementById('FC-ShowHomeBanners');
-    FCShowHomeBanners.innerHTML = FCHideHomeBanners.innerHTML;
+    // FCShowHomeBanners.innerHTML = FCHideHomeBanners.innerHTML;
   }
   
   //Aviso de disponibilidade

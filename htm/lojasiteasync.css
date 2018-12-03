@@ -544,7 +544,7 @@ html, body {
 .header-sidenav .EstListCat li a {
   color: #00A859;
 }
-.header-sidenav .EstListCat li a span {
+.header-sidenav .EstListCat span {
   position: relative;
 }
 .header-sidenav a {

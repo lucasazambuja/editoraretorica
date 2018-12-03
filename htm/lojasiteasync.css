@@ -462,6 +462,9 @@ html, body {
   background: none;
   border: none;
 }
+#bar-icons .dropdown-toggle:focus {
+  outline: none;
+}
 #bar-icons .dropdown-menu {
   width: 230px;
   padding: 10px;

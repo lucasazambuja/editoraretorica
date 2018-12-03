@@ -638,3 +638,8 @@ html, body {
   text-align: center;
   margin-top: 10px;
 }
+
+.badgeNew {
+  background: #64a360;
+  color: #fff;
+}

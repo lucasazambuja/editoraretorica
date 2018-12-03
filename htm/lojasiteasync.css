@@ -397,7 +397,7 @@
 html, body {
   overflow-x: hidden !important;
 }
-.container {
+.bootstrap-style .container {
   max-width: 1490px;
 }
 .top-bar {

@@ -597,7 +597,7 @@ html, body {
 .DivHomeImagemProd img, .DivProductListImagemProd img {
   max-width: 100%;
   max-height: 100%;
-  width: 100%;
+  width: 80%;
   height: auto;
   padding: 0px;
 }

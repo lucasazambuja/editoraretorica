@@ -465,6 +465,12 @@ html, body {
   padding: 10px;
   margin-left: -50px;
 }
+#bar-icons .dropdown-toggle::after {
+  right: 20px;
+  position: relative;
+  top: 15px;
+  color: #fff;
+}
 .top-bar > span > .spacing {
   padding-right: 10px;
   display: inline-block;

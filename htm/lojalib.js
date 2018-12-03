@@ -6,7 +6,7 @@ var iDescontoAvista=0;
 
 //Informe abaixo os juros para parcelamento em 1x, 2x, 3x, etc.
 var Juros=new Array();
-Juros[0]=0; //1x (à vista)
+Juros[0]=0; //1x (ï¿½ vista)
 Juros[1]=0; //2x
 Juros[2]=0; //3x
 Juros[3]=0; //4x
@@ -25,7 +25,7 @@ var sF$=(function(){
     return document.getElementById(id);
   }
 
-  //Função que faz pré-load das imagens
+  //Funï¿½ï¿½o que faz prï¿½-load das imagens
   function fnPreloadImages() { //v3.0
     var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
     var i,j=d.MM_p.length,a=fnPreloadImages.arguments; for(i=0; i<a.length; i++)
@@ -55,12 +55,12 @@ var sF$=(function(){
   var iPL=0;
   
   function fnShowProd(Price,OriginalPrice,Cod,iMaxParcels,ProductID){
-    //função que mostra o preço do produto, parcelamento, desconto à vista e badge (home e lista)
+    //funï¿½ï¿½o que mostra o preï¿½o do produto, parcelamento, desconto ï¿½ vista e badge (home e lista)
     iPL++;
     var idPrice=fnGetID("idProdPrice"+ProductID);
     var sPrice="";
     if(Price==0 && OriginalPrice==0){
-      if(idPrice)idPrice.innerHTML="<div class=\"prices\"><br><div class=\"price font-bold\"><div class=currency><a href='/faleconosco.asp?idloja="+FC$.IDLoja+"&assunto=Consulta%20sobre%20produto%20(Código%20"+Cod+")' target='_top' >Consulte-nos</a></div></div></div>";
+      if(idPrice)idPrice.innerHTML="<div class=\"prices\"><br><div class=\"price font-bold\"><div class=currency><a href='/faleconosco.asp?idloja="+FC$.IDLoja+"&assunto=Consulta%20sobre%20produto%20(Cï¿½digo%20"+Cod+")' target='_top' >Consulte-nos</a></div></div></div>";
       return void(0);
     }
     var iPrice=Price.toString().split(".");
@@ -99,14 +99,14 @@ var sF$=(function(){
     //desconto
     if(Price>0 && iDescontoAvista>0){
       var oProdDesc=document.getElementById("ProdDesc"+ProductID);
-      if(oProdDesc)oProdDesc.innerHTML="à vista <b>"+FormatPrice(Price*((100-iDescontoAvista)/100),FC$.Currency)+"</b>";
+      if(oProdDesc)oProdDesc.innerHTML="ï¿½ vista <b>"+FormatPrice(Price*((100-iDescontoAvista)/100),FC$.Currency)+"</b>";
     }
     //badge
     var oBadge=document.getElementById("DivProd"+ProductID);
     if(oBadge){
       var sBadges="";
       if(oBadge.hasAttribute("data-sale") && OriginalPrice>Price)sBadges+="<div id='badgeProm"+ProductID+"' class='fc-badge-product-sale' title='Oferta'><span>-" + fnGetSale() + "%</span></div>";
-      //if(oBadge.hasAttribute("data-release"))sBadges+="<div class='fc-badge-product-release' title='Lançamento'>&#10033;</div>";
+      //if(oBadge.hasAttribute("data-release"))sBadges+="<div class='fc-badge-product-release' title='Lanï¿½amento'>&#10033;</div>";
       //if(oBadge.hasAttribute("data-highlight"))sBadges+="<div class='fc-badge-product-highlight' title='Destaque'>&#9755;</div>";
       if(sBadges!="")oBadge.innerHTML+="<div class='fc-badge-product-principal'>"+ sBadges+"</div>";
     }
@@ -116,7 +116,7 @@ var sF$=(function(){
   function fnShowButtonCart(Estoque, IDProd){
     var idButton=document.querySelector('#idButtonProd'+IDProd+' img');
     var idAviso=document.querySelector('#idAvisoProd'+IDProd+'');
-    var avisoDisp='<span class="mntext"><a href="#na" onclick="sF$.fnShowDisp('+IDProd+');" title="Clique aqui para ser avisado da disponibilidade deste produto">Avise-me</a> quando estiver disponível.</span>';
+    var avisoDisp='<span class="mntext"><a href="#na" onclick="sF$.fnShowDisp('+IDProd+');" title="Clique aqui para ser avisado da disponibilidade deste produto">Avise-me</a> quando estiver disponï¿½vel.</span>';
     if (idButton){
       if(Estoque==0){
         idButton.setAttribute('src',''+FC$.PathImg+'botcarrinhoesgotado.svg?cccfc=1');
@@ -148,7 +148,7 @@ var sF$=(function(){
   }
   
   function fnCustomizeIconsSocialNetworks(isProd){
-  //se isProd personaliza ícones do detalhe do produto, caso contrário do rodapé
+  //se isProd personaliza ï¿½cones do detalhe do produto, caso contrï¿½rio do rodapï¿½
     if(isProd)var oContentHTML=document.getElementById("idShareProd");
     else var oContentHTML=document.getElementById("idShareFooter");
     if(oContentHTML)var aImgsShare=oContentHTML.getElementsByTagName('img');
@@ -175,7 +175,7 @@ var sF$=(function(){
           aImgsShare[i].style.height="33px";
           aImgsShare[i].setAttribute("alt","Redes Sociais");
         }
-        else{ //rodapé
+        else{ //rodapï¿½
           aImgsShare[i].style.width="43px";
           aImgsShare[i].style.height="43px";
           aImgsShare[i].setAttribute("alt","Redes Sociais");
@@ -225,7 +225,7 @@ var sF$=(function(){
     }
   }
 
-  //Histórico de navegação
+  //Histï¿½rico de navegaï¿½ï¿½o
   function fnLoadXMLPageHistory(){FCLib$.fnAjaxExecFC("/xmlpagehistory.asp","idloja="+FC$.IDLoja,false,fnCallbackLoadXMLPageHistory);}
 
   function fnCallbackLoadXMLPageHistory(oHTTP){
@@ -242,7 +242,7 @@ var sF$=(function(){
       var sPageHistory="";
       try{var sBar=(oHistoryPages[0].getElementsByTagName("title")[0].childNodes[0].nodeValue);}
       catch(e){var sBar="";}
-      if(sBar!=""){sPageHistory+="<div id='idDivPageHistory'><div id='idPageHistoryFC'><div id='idTitPageHistory'><h3>Meu histórico de navegação:</h3></div><ul id='idListPageHistoryFC'>";}  
+      if(sBar!=""){sPageHistory+="<div id='idDivPageHistory'><div id='idPageHistoryFC'><div id='idTitPageHistory'><h3>Meu histï¿½rico de navegaï¿½ï¿½o:</h3></div><ul id='idListPageHistoryFC'>";}  
       for (i=0;i<oHistoryPages.length;i++){
         sTitleProd=oHistoryPages[i].getElementsByTagName("title")[0].childNodes[0].nodeValue;
         sLinkProd=oHistoryPages[i].getElementsByTagName("link")[0].childNodes[0].nodeValue;
@@ -278,9 +278,9 @@ var sF$=(function(){
     if(oUlAdic2Qt){bTemPathQts=true;}else{document.getElementById('idListaProdAdicional2FC').style.display='none';}
     var oUlAdic3Qt=document.getElementById("idUlAdic3QtFC");
     if(oUlAdic3Qt){bTemPathQts=true;}else{document.getElementById('idListaProdAdicional3FC').style.display='none';}
-    //Caso não tenha produtos em categorias/adicionais encontrados, remove div
+    //Caso nï¿½o tenha produtos em categorias/adicionais encontrados, remove div
     if(!bTemPathQts)document.getElementById("idDivPath").style.display='none';
-    //Caso não tenha filtros de busca, remove div com filtros
+    //Caso nï¿½o tenha filtros de busca, remove div com filtros
     var oUlPathSearch=document.getElementById("idUlPathSearchFC");
     if(oUlPathSearch==null)document.getElementById("idDivSearch").style.display='none';
   }
@@ -317,7 +317,7 @@ var sF$=(function(){
   
   function fnMostraDescontoProdDet(PrecoProd){
     if(PrecoProd==0 || iDescontoAvista==0)return;
-    document.getElementById("idPriceAVista").innerHTML="<div id='PriceAVista'><p>Para pagamentos à vista ganhe <b>"+ iDescontoAvista +"% de desconto</b>.</p><p>Valor com desconto <b>"+FormatPrice(PrecoProd*((100-iDescontoAvista)/100),FC$.Currency)+"</b></p></div>";
+    document.getElementById("idPriceAVista").innerHTML="<div id='PriceAVista'><p>Para pagamentos ï¿½ vista ganhe <b>"+ iDescontoAvista +"% de desconto</b>.</p><p>Valor com desconto <b>"+FormatPrice(PrecoProd*((100-iDescontoAvista)/100),FC$.Currency)+"</b></p></div>";
   }
 
   function fnCreateEventGA(sCategory,sAction,sLabel){
@@ -336,7 +336,7 @@ var sF$=(function(){
   //Aviso de disponibilidade
   function fnLinkDisp(Estoque,IDProduto){
     if(Estoque==0){
-      document.write("<a href='javascript:MostraDisp("+ FC$.IDLoja +","+ IDProduto +")' title='Clique aqui para ser avisado quando este produto estiver disponível'>Avise-me quando estiver disponível</a>");
+      document.write("<a href='javascript:MostraDisp("+ FC$.IDLoja +","+ IDProduto +")' title='Clique aqui para ser avisado quando este produto estiver disponï¿½vel'>Avise-me quando estiver disponï¿½vel</a>");
     }
   }
   
@@ -560,7 +560,7 @@ function FuncButtonAddToWL(idp,bAdd){
   }
 }
 
-//Funções para o carrinho
+//Funï¿½ï¿½es para o carrinho
 var oDivShowCartOnPage=null;
 var iLastCartOnPage=0;
 
@@ -634,7 +634,7 @@ function fnShowCEP(IDProd){
     sCEP+="    <div id='idDivImgLoadingCEPFC'><img src='"+ FC$.PathImg +"loadingcep.gif?cccfc=1' vspace=3 style='display:none;' id=ImgLoadingCEP></div>";
     sCEP+="    <div id='idShippingValues"+ IDProd +"'></div></div>";
     sCEP+="  </div>";
-    if(FC$.TypeFrt==4)sCEP+="<div class='FreightTxtOnlyBR'><img src='"+FC$.PathImg+"icexclamation.svg?cccfc=1'>Simulação apenas para o Brasil</div>";
+    if(FC$.TypeFrt==4)sCEP+="<div class='FreightTxtOnlyBR'><img src='"+FC$.PathImg+"icexclamation.svg?cccfc=1'>Simulaï¿½ï¿½o apenas para o Brasil</div>";
     sCEP+="</div>";
     var oShowCEP=document.getElementById("ShowCEP"+IDProd);
     if(oShowCEP)oShowCEP.innerHTML=sCEP;
@@ -676,7 +676,7 @@ function processXMLCEP(obj,IDProd){
     var OptObs=ReadXMLNode(obj,"Opt"+ i +"Obs");
     if(OptObs==null)OptObs="";
     sValorFrete=ReadXMLNode(obj,"Opt"+ i +"Value");
-    if(sValorFrete==FC$.Currency+" 0,00")sValorFrete="FRETE GRÁTIS";
+    if(sValorFrete==FC$.Currency+" 0,00")sValorFrete="FRETE GRï¿½TIS";
     sShipping+="<div class='ZipOption'>";
     sShipping+="  <div class='ZipNameObs'>";
     sShipping+="    <div class='ZipName'>"+ OptName +"</div>";
@@ -746,7 +746,7 @@ function fnCallbackSuggestions(aTerms){
   }
 }
 
-// Funções executadas no rodapé
+// Funï¿½ï¿½es executadas no rodapï¿½
 function fnFooter(){
   sF$.fnUpdateCart(false,false);
   FCLib$.onReady(sF$.fnCustomizeIconsSocialNetworks(false));
@@ -799,7 +799,7 @@ function fnShowYear(){
   var oFooterFullYear=document.getElementById("FooterFullYear");
   if(oFooterFullYear)oFooterFullYear.innerHTML = footerYearDisplay;
 }
-// Funções executadas no rodapé
+// Funï¿½ï¿½es executadas no rodapï¿½
 
 // mixitUp
 function execMixClasses(){
@@ -826,7 +826,7 @@ function NoCascate(sURL){
 }
 
 // Grade
-/*Função para mostrar parcelamento*/
+/*Funï¿½ï¿½o para mostrar parcelamento*/
 function fnMaxInstallmentsGrid(PrecoProd,MaxParcelas){
   var ComSem;
   if(typeof Juros!="undefined"){
@@ -839,7 +839,7 @@ function fnMaxInstallmentsGrid(PrecoProd,MaxParcelas){
   }
 }
 
-/*Função para mostrar valor formatado*/
+/*Funï¿½ï¿½o para mostrar valor formatado*/
 function FormatNumber(num){
   var num=num.toString().replace(/\$|\,/g,'');
   if(isNaN(num))num="0";
@@ -848,7 +848,7 @@ function FormatNumber(num){
   return ((sign)?'':'-')+num;
 }
 
-/*Função para mostrar valor economizado em produtos em promoção*/
+/*Funï¿½ï¿½o para mostrar valor economizado em produtos em promoï¿½ï¿½o*/
 function fnShowEconomyGrid(ProdPrice,ProdPriceOri){
   if(ProdPrice!=ProdPriceOri && typeof FormatNumber == 'function' && typeof FormatPrice == 'function' ){
     return "<font style='font-size:16px;display:block;margin:10px 0;' color=#33691e>Economize <b>"+ FormatPrice(ProdPriceOri-ProdPrice,FC$.Currency) +"</b> ("+ FormatNumber(((ProdPriceOri-ProdPrice)/ProdPriceOri)*100)+"%)</font>";
@@ -914,7 +914,7 @@ function processXMLCEPGrid(obj,IDProd){
     var OptObs=ReadXMLNode(obj,"Opt"+ i +"Obs");
     if(OptObs==null)OptObs="";
     sValorFrete=ReadXMLNode(obj,"Opt"+ i +"Value");
-    if(sValorFrete==FC$.Currency+" 0,00")sValorFrete="FRETE GRÁTIS";
+    if(sValorFrete==FC$.Currency+" 0,00")sValorFrete="FRETE GRï¿½TIS";
     sShipping+="<div class='ZipOption'>";
     sShipping+="  <div class='ZipNameObs'>";
     sShipping+="    <div class='ZipName'>"+ OptName +"</div>";
@@ -1000,7 +1000,7 @@ if(FC$.Page=="Home" || FC$.Page=="Products"){
       DontGoBtnClose:FC$.PathImg +"botdontgoclose.svg?cccfc=1", //Close button
       DontGoBanner:FC$.PathImg +"bannerpopupdontgo.jpg?cccfc=1", //Banner
       DontGoLink:"/prod,idloja,"+FC$.IDLoja+",promocao,1,ofertas.htm", //Link
-      DontGoAltParam:"UM DESCONTO ESPECIAL PARA VOCÊ!"}, //Alt Param
+      DontGoAltParam:"UM DESCONTO ESPECIAL PARA VOCï¿½!"}, //Alt Param
       "DontGoCookie"); //Cookie name
     }
   });
@@ -1109,9 +1109,9 @@ function fnNewsVoiceSearch(){
   }
 }
 
-// Cálculo de frete na cesta
+// Cï¿½lculo de frete na cesta
 function fnCustomizeCart(){
-  //insere campo solicitando o CEP para cálculo do lado esquerdo
+  //insere campo solicitando o CEP para cï¿½lculo do lado esquerdo
   var oFCCartSubtotals=document.getElementById("FCCartSubtotals");
   if(document.getElementById("idColPesoFC"))var sColspan=3; else var sColspan=2;
   if(oFCCartSubtotals){
@@ -1121,7 +1121,7 @@ function fnCustomizeCart(){
     var oTRFreightCalc=oFCCartSubtotals.parentNode.insertBefore(oNewElement,oFCCartSubtotals);
     oTRFreightCalc.innerHTML="<td>Digite o CEP para calcular o frete: <input type=text id=idZipC1 size=10 maxlength=9 class=InputText>&nbsp;<input type=button value='Calcular frete' class=idBut class=InputButton onclick='fnGetShippingValue(1)'></td><td align=right colspan="+ sColspan +"><span id=idShippingObs1></span></td><td align=right><span id=idShippingValue1></span><img src='/images/loading.gif' vspace=3 style='display:none' id=idImgLoadingCEP1></td>";
   }
-  //insere campo solicitando o CEP para cálculo do lado direito
+  //insere campo solicitando o CEP para cï¿½lculo do lado direito
   var oFCCartRight=document.getElementById("FCCartSmallSubtotalPrice");
   if(!oFCCartRight)oFCCartRight=document.getElementById("FCCartSmallSubtotals");
   if(oFCCartRight){
@@ -1170,7 +1170,7 @@ function fnCustomizeCart(){
 }
 
 function fnGetCEP(){
-  //se já tem CEP em cookie já mosta cálculo
+  //se jï¿½ tem CEP em cookie jï¿½ mosta cï¿½lculo
   var sNumCEP=FCLib$.GetCookie("CEP"+FC$.IDLoja);
   if(sNumCEP && sNumCEP!=""){
     document.getElementById("idZipC1").value=sNumCEP;
@@ -1245,7 +1245,7 @@ function fnprocessXMLCEPC(obj){
   var iValFrete=OptValue.replace("R$ ","").replace(",",".");
   var iTotalCesta=parseFloat(iValorCesta)+parseFloat(iValFrete);
   //insere totais na tabela principal
-  var oLocalInsert=document.getElementById("FCCartWrapTotal"); //se tem embalagem, tenta usar esta posição primeiro
+  var oLocalInsert=document.getElementById("FCCartWrapTotal"); //se tem embalagem, tenta usar esta posiï¿½ï¿½o primeiro
   if(!oLocalInsert)oLocalInsert=document.getElementById("FCCartSubtotalPrice");
   if(!oLocalInsert)oLocalInsert=document.getElementById("FCCartSubtotals");
   if(oLocalInsert){
@@ -1272,7 +1272,7 @@ function fnInsertAfter(newNode, referenceNode) {
   referenceNode.parentNode.insertBefore(newNode, referenceNode.nextSibling);
 }
 
-// Cálculo de frete na cesta
+// Cï¿½lculo de frete na cesta
 function fnButCupom(){
   var oCupom=document.getElementById("Cupom");
   if(oCupom){
@@ -1339,7 +1339,7 @@ var Cart$=(function(){
         var s3=oItems[i].s3; if(s3==undefined)s3="";
         var wrap=oItems[i].wrap; if(wrap==undefined)wrap=false;
         var wrapValue=oItems[i].wrapValue; if(wrapValue==undefined)wrapValue=0;
-        //Informações do produto       
+        //Informaï¿½ï¿½es do produto       
         sProdAtual+="<div id='DivItem"+ idProdPed +"' class='CartDesign-product-container'>";
         sProdAtual+="  <div class='CartDesign-product-img'>";
         sProdAtual+="    <div class='ImgProdCart'><a href='/listaprodutos.asp?idloja="+ FC$.IDLoja +"&idproduto="+ idProdCart +"'><img src='"+ ImgProdCart +"' border='0'></a></div>";
@@ -1375,7 +1375,7 @@ var Cart$=(function(){
         ValCesta=subtotalProdCart.replace(".","").replace(",",".");
         sFinalCart=""; 
         if(totalWrapValue>0)ValCesta=ValCesta-totalWrapValue; //se tem valor de presente, retira do valor da cesta      
-        //Se valor do total dos produtos é diferente do subtotal calculado exibe descontos
+        //Se valor do total dos produtos ï¿½ diferente do subtotal calculado exibe descontos
         if(totalProds!=subtotalProdCart){
           var ValProds=totalProds.replace(".","").replace(",",".");
           var ValorDesconto=(ValProds-ValCesta);
@@ -1411,7 +1411,7 @@ var Cart$=(function(){
         sFinalCart+="    &nbsp;"+ FCLib$.FormatPreco(currencyProdCart +" "+ subtotalProdCart) +"";
         sFinalCart+="  </div>";
         sFinalCart+="</div></div>";        
-        //Insere cálculo de frete se loja tem configurado por CEP
+        //Insere cï¿½lculo de frete se loja tem configurado por CEP
         if(FC$.TypeFrt==3 || FC$.TypeFrt==4){           
           sFinalCart+="<div id='FCCartTotalFreight' class='CartDesign-product-zipcode-container'>";
           sFinalCart+="  <div class='CartDesign-product-zipcode-field'>";
@@ -1425,14 +1425,14 @@ var Cart$=(function(){
         }
         //Parcelamento
         sFinalCart+="<div id='FCCartTotalParcCalc' class='ParcProdCart'>"+ fnMontaMaxParcelaCart(ValCesta) +"</div>";
-        //Botão ir para carrinho
+        //Botï¿½o ir para carrinho
         //sFinalCart+="<div class=ProdCartGo><a href='/addproduto.asp?idloja="+ FC$.IDLoja +"'>IR PARA O CARRINHO</a></div>";
-        //Botão ir para pagto
+        //Botï¿½o ir para pagto
         sFinalCart+="<div class='ProdCartPagto'><a href='/checkout.asp?idloja="+ FC$.IDLoja +"'>IR PARA O PAGAMENTO</a></div>";
       }
     }
     var oCartDesign=document.getElementById("CartDesign");
-    //Insere elemento (carrinho) se ele não existir
+    //Insere elemento (carrinho) se ele nï¿½o existir
     if(!oCartDesign){
       var oInsert=document.getElementById("idFCLeftContentRight");
       if(oInsert){
@@ -1444,7 +1444,7 @@ var Cart$=(function(){
     }
 
     var oBlocker=document.getElementById("Blocker");
-    //Insere elemento (tela bloqueada) se ele não existir
+    //Insere elemento (tela bloqueada) se ele nï¿½o existir
     if(oBlocker){
       oBlocker.style.display="block";
     }
@@ -1471,9 +1471,9 @@ var Cart$=(function(){
     };
 
     var bTemProds=true;
-    if(sProdutosNaCesta==""){bTemProds=false;sProdutosNaCesta+="<div class='CartDesign-empty'>Seu carrinho está vazio.</div>";}
+    if(sProdutosNaCesta==""){bTemProds=false;sProdutosNaCesta+="<div class='CartDesign-empty'>Seu carrinho estï¿½ vazio.</div>";}
     
-    //Se ocorreu erro ao incluir exibe mensagem de erro. Se não ocorrer erro não mostra a mensagem
+    //Se ocorreu erro ao incluir exibe mensagem de erro. Se nï¿½o ocorrer erro nï¿½o mostra a mensagem
     if(iErr>0 && sMsg!=""){sProdutosNaCesta="<div id=DivMsgCart><div style='color:"+(iErr>0?"#ffffff":"#ffffff") +";background:"+(iErr>0?"#b61f24":"#1a75d7") +";'>"+ sMsg +"</div></div>"+sProdutosNaCesta;}
 
     var sTopo="<div class='CartDesign-header'>";
@@ -1495,12 +1495,12 @@ var Cart$=(function(){
     //Insere o elemento do carrinho
     oCartDesign.innerHTML=sContCart;
 
-    //Mostra carrinho (opção com aninação)
+    //Mostra carrinho (opï¿½ï¿½o com aninaï¿½ï¿½o)
     //oCartDesign.style.display="";
     //jQuery(oCartDesign).show(300);
     if(oCartDesign.style.right=="" || oCartDesign.style.right=="-350px")jQuery(oCartDesign).animate({ "right": "+=350px" }, 200 );
 
-    //Muda tamanho e posição dependendo da largura
+    //Muda tamanho e posiï¿½ï¿½o dependendo da largura
     /*var iClientWidth=document.documentElement.clientWidth;
     if(iClientWidth<350){oCartDesign.style.width="320px";}
     if(iClientWidth<440){oCartDesign.style.top="0px";}
@@ -1510,13 +1510,13 @@ var Cart$=(function(){
       if(oContentItensCart)oContentItensCart.style.maxHeight="215px";
     }*/
 
-    //Se não está vazio, carrega função do cálculo de frete
+    //Se nï¿½o estï¿½ vazio, carrega funï¿½ï¿½o do cï¿½lculo de frete
     if((FC$.TypeFrt==3 || FC$.TypeFrt==4) && bTemProds)fnGetCEP(subtotalProdCart); 
 
     //Atualiza carrinho do topo
     fnUpdateCartTop(iItensCesta,currencyProdCart,subtotalProdCart);
 
-    //Remove mensagem de produto adicionado ao carrinho ou produto não adicionado
+    //Remove mensagem de produto adicionado ao carrinho ou produto nï¿½o adicionado
     setTimeout(function(){if(document.getElementById('DivMsgCart'))jQuery(document.getElementById('DivMsgCart')).hide(500);},2000);
 
   }
@@ -1539,7 +1539,7 @@ var Cart$=(function(){
   function fnCloseCartDesign(){
     var oCartDesign=document.getElementById("CartDesign");   
     if(oCartDesign){
-      //Esconde carrinho (opção com aninação)
+      //Esconde carrinho (opï¿½ï¿½o com aninaï¿½ï¿½o)
       //oCartDesign.style.display="none";
       //jQuery(oCartDesign).hide(300);
       if(oCartDesign.style.right=="0px")jQuery(oCartDesign).animate({ "right": "-=350px" }, 200 );
@@ -1555,7 +1555,7 @@ var Cart$=(function(){
   };
 
   function fnGoCupom(){
-    if(confirm("Deseja inserir o código de um cupom de desconto?\n\nCaso tenha um cupom de desconto você será redirecionado para a página onde pode inserir este cupom para obter o desconto.")){top.location.href="/addproduto.asp?idloja="+ FC$.IDLoja +"#acupom";}
+    if(confirm("Deseja inserir o cï¿½digo de um cupom de desconto?\n\nCaso tenha um cupom de desconto vocï¿½ serï¿½ redirecionado para a pï¿½gina onde pode inserir este cupom para obter o desconto.")){top.location.href="/addproduto.asp?idloja="+ FC$.IDLoja +"#acupom";}
   }
 
   function fnChangeQtdProd(idProdCart,idProdPed,bMais){
@@ -1563,7 +1563,7 @@ var Cart$=(function(){
     if(oQtdValOri){
       var iQtdOri=parseInt(oQtdValOri.innerHTML);
       if(bMais)var iQtd=iQtdOri+1; else var iQtd=iQtdOri-1;
-      //Se controla estoque checa quantos tem no produto, caso contrário altera a quantidade direto
+      //Se controla estoque checa quantos tem no produto, caso contrï¿½rio altera a quantidade direto
       if(FC$.StockControl)FCLib$.fnAjaxExecFC("/infoprod.asp","idloja="+ FC$.IDLoja +"&idprod="+ idProdCart +"&format=1",false,fnChangeQtdProdStock,idProdPed,iQtd,iQtdOri);
       else fnChangeQtdProdExec(idProdPed,iQtd);
     }
@@ -1584,15 +1584,15 @@ var Cart$=(function(){
     //console.log("bLeuEstoque:"+bLeuEstoque);
     if(bLeuEstoque){
       if(iQtdProd<iQtdOri){
-        iQtdSolic=iQtdProd; //se a qtd original é maior que a qtd em estoque, a quantidade solicitada é a qtd do produto
-        if(iQtdSolic==0){sMsgErr="O produto foi removido do carrinho pois não temos mais em estoque";}
-        else {sMsgErr="A quantidade foi alterada para a quantidade máxima em estoque disponível nesse momento: "+ iQtdProd;}
+        iQtdSolic=iQtdProd; //se a qtd original ï¿½ maior que a qtd em estoque, a quantidade solicitada ï¿½ a qtd do produto
+        if(iQtdSolic==0){sMsgErr="O produto foi removido do carrinho pois nï¿½o temos mais em estoque";}
+        else {sMsgErr="A quantidade foi alterada para a quantidade mï¿½xima em estoque disponï¿½vel nesse momento: "+ iQtdProd;}
       }
     }
     else{
-      iQtdProd=iQtdSolic; //se não consegue ler estoque do produto, usa o estoque solicitado
+      iQtdProd=iQtdSolic; //se nï¿½o consegue ler estoque do produto, usa o estoque solicitado
     }
-    if(iQtdSolic<=iQtdProd)fnChangeQtdProdExec(idProdPed,iQtdSolic); else sMsgErr="Infelizmente não temos "+ iQtdSolic +" unidades em estoque";
+    if(iQtdSolic<=iQtdProd)fnChangeQtdProdExec(idProdPed,iQtdSolic); else sMsgErr="Infelizmente nï¿½o temos "+ iQtdSolic +" unidades em estoque";
     if(sMsgErr!="")alert(sMsgErr);
   }
 
@@ -1609,15 +1609,15 @@ var Cart$=(function(){
 
   function fnInsertLoading(idProdPed){
     var oObj=document.getElementById("DivItem"+idProdPed);
-    var sH="112";//altura padrão
-    var sM="28";//margin top padrão
+    var sH="112";//altura padrï¿½o
+    var sM="28";//margin top padrï¿½o
     var iHeight=oObj.offsetHeight;
     if(iHeight && iHeight>0){sH=iHeight-1;sM=((iHeight-50)/2);}
     if(oObj)oObj.innerHTML="<div style='width:100%;height:"+ sH +"px;text-align:center;'><img style='margin-top:"+ sM +"px;' src=/images/loading_ajax.gif></div>"
   }
 
   function fnGetCEP(iValorCesta){
-    //Se já tem CEP em cookie já mostra cálculo
+    //Se jï¿½ tem CEP em cookie jï¿½ mostra cï¿½lculo
     var sNumCEP=FCLib$.GetCookie("CEP"+FC$.IDLoja);
     if(sNumCEP && sNumCEP!=""){
       document.getElementById("idZipC").value=sNumCEP;
@@ -1628,7 +1628,7 @@ var Cart$=(function(){
   function fnGetShippingValueCart(iValorCesta){
     var sCEP=document.getElementById("idZipC").value;
     FCLib$.SetCookie("CEP"+FC$.IDLoja,sCEP);
-    if(sCEP==""){document.getElementById("idShippingValue").innerHTML="<span style=color:#990000;>CEP inválido</span>";}
+    if(sCEP==""){document.getElementById("idShippingValue").innerHTML="<span style=color:#990000;>CEP invï¿½lido</span>";}
     else{
       document.getElementById("idShippingValue").innerHTML="";
       var oImgLoadingCEP=document.getElementById("idImgLoadingCEP");
@@ -1652,7 +1652,7 @@ var Cart$=(function(){
     var OptName=ReadXMLNode(obj,"Opt1Name");
     var OptValue=ReadXMLNode(obj,"Opt1Value");
     var OptObs=ReadXMLNode(obj,"Opt1Obs");
-    //oShippingObs.innerHTML="<b>"+ OptName +"</b><br><span class=ObsFreightCalc>"+ OptObs +"</span>"; //Insere observações
+    //oShippingObs.innerHTML="<b>"+ OptName +"</b><br><span class=ObsFreightCalc>"+ OptObs +"</span>"; //Insere observaï¿½ï¿½es
     oShippingValue.innerHTML=OptValue;
     oShippingValue.style.display="block";
     var oImgLoadingCEP=document.getElementById("idImgLoadingCEP");
@@ -1686,7 +1686,7 @@ var Cart$=(function(){
   }
 
   function fnMontaMaxParcelaCart(Valor){
-    return("Em até 10x de "+ FormatPrecoReais(CalculaParcelaJurosCompostos(Valor,10)));
+    return("Em atï¿½ 10x de "+ FormatPrecoReais(CalculaParcelaJurosCompostos(Valor,10)));
   }
 
   return{
@@ -1758,3 +1758,7 @@ function filterCloseNav(){
   document.getElementById("filterSidenav").style.left="-300px";
   document.getElementById("filter-offcanvas-overlay").style.display = "none";
 }
+
+jQuery('.EstListCat li a').each(function() {
+  jQuery(this).before('<img src="https://editoraretorica-lojavirtualfc-com-br.cdn.ampproject.org/i/s/s3-sa-east-1.amazonaws.com/x1p/lojas/00040034/images/icon-banner-payment.svg?cccfc=2396e410" style="width: 46px;position: absolute;top: 10px;">')
+});

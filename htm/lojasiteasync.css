@@ -586,3 +586,11 @@ html, body {
   top: 18px;
   opacity: 1;
 }
+.home-container-products-child {
+  width: 100%;
+  margin: 0;
+}
+.home-container-products {
+  width: 100%;
+  margin: 0;
+}

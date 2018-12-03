@@ -643,3 +643,6 @@ html, body {
   background: #64a360;
   color: #fff;
 }
+.badgeLove > span {
+  display: inline-block;
+}

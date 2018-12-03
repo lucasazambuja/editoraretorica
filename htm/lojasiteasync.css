@@ -594,3 +594,7 @@ html, body {
   width: 100%;
   margin: 0;
 }
+.DivHomeImagemProd img, .DivProductListImagemProd img {
+  max-width: 100%;
+  max-height: 100%;
+}

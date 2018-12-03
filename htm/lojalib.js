@@ -773,6 +773,10 @@ function fnFooter(){
     // sF$.fnSlideshowSwiper();
   }
 
+function Swiper() {
+    return;
+  }
+
   jQuery(document).ready(function(){
     sF$.fnLoadXMLPageHistory();
   });

@@ -770,7 +770,7 @@ function fnFooter(){
   }
   else if(FC$.Page=="Home"){
     sF$.fnHideShowBannersHome();
-    sF$.fnSlideshowSwiper();
+    // sF$.fnSlideshowSwiper();
   }
 
   jQuery(document).ready(function(){

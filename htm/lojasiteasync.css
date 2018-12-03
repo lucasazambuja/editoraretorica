@@ -620,3 +620,7 @@ html, body {
 .DivHomePriceProd .prices strong {
   font-weight: normal;
 }
+.FCHome .home-price {
+  color: #66676d;
+  font-size: 1em;
+}

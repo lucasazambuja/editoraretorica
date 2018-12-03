@@ -518,9 +518,10 @@ html, body {
   height: 38px;
   border: none;
 }
-#search-form-bar button#search-button > img {
-  opacity: 1;
-  width: 45px;
-  height: auto;
-  display: inline-block;
+#search-form-bar button#search-button > i {
+  font-size: 25px;
+  color: #9E9E9E;
+  top: 2px;
+  position: relative;
+  right: 10px;
 }

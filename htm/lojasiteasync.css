@@ -397,6 +397,10 @@
 html, body {
   overflow-x: hidden !important;
 }
+.bootstrap-style button {
+  background: none;
+  border: none;
+}
 .bootstrap-style .container {
   max-width: 1490px;
 }

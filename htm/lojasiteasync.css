@@ -603,3 +603,6 @@ html, body {
 .DivHomeImagemProd > a {
   display: inline-block;
 }
+.DivHomeImagemProd, .DivProductListImagemProd {
+  height: auto;
+}

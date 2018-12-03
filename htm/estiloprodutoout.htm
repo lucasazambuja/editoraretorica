@@ -3,9 +3,10 @@
     <div class="col-12" <DataAttribute> id="DivProd<IDProduto>">
       <div class="DivHomeImagemProd" id="DivImagemProdDouble<IDProduto>" onclick="NoCascate('<URLProd>');"></div>
       <div class="DivHomeNomeProd col-12 text-left" onclick="NoCascate('<URLProd>');">
-        <span class="HomeNomeProd text-overflow font-regular"><NomeProd></span>
+        <span class="HomeNomeProd pt-0 text-overflow font-regular"><NomeProd></span>
       </div>
-      <div class="col-12 DivHomePriceProd" style="white-space:nowrap;" onclick="NoCascate('<URLProd>');">
+      <div class="col-12 mt-0 p-0 DivHomePriceProd" style="white-space:nowrap;" onclick="NoCascate('<URLProd>');">
+        <div id="idProdRef<IDProduto>">Ref: <CodProd></div>
         <div id="idProdPrice<IDProduto>"></div> 
         <!-- <div class="PriceAVistaLista" id="ProdDesc<IDProduto>"></div> -->
       </div>

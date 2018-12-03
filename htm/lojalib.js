@@ -1758,7 +1758,3 @@ function filterCloseNav(){
   document.getElementById("filterSidenav").style.left="-300px";
   document.getElementById("filter-offcanvas-overlay").style.display = "none";
 }
-
-jQuery('.EstListCat li a').each(function() {
-  jQuery(this).before('<img src="<BaseLoja>images/icon-banner-payment.svg?cccfc=2396e410" style="width: 46px;position: absolute;top: 10px;">')
-});

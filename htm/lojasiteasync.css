@@ -458,7 +458,10 @@ html, body {
 .bootstrap-style .dropdown-item {
   line-height: 2em;
 }
-
+#bar-icons .dropdown-toggle {
+  background: none;
+  border: none;
+}
 #bar-icons .dropdown-menu {
   width: 230px;
   top: -30px !important;

@@ -536,6 +536,7 @@ html, body {
 }
 #headerSidenav {
   background: #fff;
+  padding-top: 0px;
 }
 #headerSidenav a {
   text-transform: uppercase;

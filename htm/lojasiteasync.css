@@ -650,7 +650,7 @@ html, body {
 }
 .badgeView {
   color: #64a360;
-  line-height: 20px;
+  line-height: 20px !important;
 }
 .badgeLove > span {
   display: inline-block;

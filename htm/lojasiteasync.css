@@ -392,6 +392,7 @@
 /* CUSTOM CSS */
 * {
   font-family: 'Roboto', sans-serif;
+  outline: none !important;
 }
 html, body {
   overflow-x: hidden !important;

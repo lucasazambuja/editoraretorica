@@ -580,3 +580,9 @@ html, body {
   color: #fff;
   text-decoration-line: underline;
 }
+.imageCatMenu img {
+  width: 40px;
+  position: absolute;
+  top: 18px;
+  opacity: 1;
+}

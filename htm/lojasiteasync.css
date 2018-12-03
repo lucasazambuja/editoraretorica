@@ -534,15 +534,18 @@ html, body {
   position: relative;
   right: 10px;
 }
+#headerSidenav {
+  background: #fff;
+}
 #headerSidenav a {
   text-transform: uppercase;
   font-weight: normal;
 }
 .header-sidenav .EstListCat li a {
-  color: #ddd;
+  color: #9E9EA0;
 }
 .header-sidenav a {
   padding: 10px 10px 10px 35px;
   height: 30px;
-  color: #ddd;
+  color: #9E9EA0;
 }

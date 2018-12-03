@@ -432,6 +432,10 @@ html, body {
   width: 100%;
   max-width: 300px;
 }
+#btnMenuMobile {
+  line-height: 1em;
+  color: #fff;
+}
 .logo img {
   width: 100%;
 }

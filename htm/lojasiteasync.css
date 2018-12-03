@@ -595,9 +595,9 @@ html, body {
   margin: 0;
 }
 .DivHomeImagemProd img, .DivProductListImagemProd img {
-  max-width: 100%;
+  max-width: 150px;
   max-height: 100%;
-  width: 80%;
+  width: 100%;
   height: auto;
   padding: 0px;
 }
@@ -610,6 +610,9 @@ html, body {
 }
 .installments.font-regular > span {
   display: inline-block;
+}
+.DivHomeNomeProd .HomeNomeProd {
+  font-size: 0.8em;
 }
 .prodRef {
   font-size: 12px;

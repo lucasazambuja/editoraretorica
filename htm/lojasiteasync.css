@@ -561,18 +561,18 @@ html, body {
 #idMenuCat1 {
   padding-bottom: 0px;
 }
-#loginTopMob {
+.loginTopMob {
   font-size: 16px;
   color: #fff;
   background: #66a564;
   padding: 10px;
 }
-#loginTopMob i {
+.loginTopMob i {
   font-size: 30px;
   padding-right: 10px;
 }
 
-#loginTopMob > a {
+.loginTopMob > a {
   display: inline-block;
   font-size: 16px;
   text-transform: none;

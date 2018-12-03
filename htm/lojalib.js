@@ -769,7 +769,7 @@ function fnFooter(){
     fnButCupom();
   }
   else if(FC$.Page=="Home"){
-    sF$.fnHideShowBannersHome();
+    // sF$.fnHideShowBannersHome();
     sF$.fnSlideshowSwiper();
   }
 

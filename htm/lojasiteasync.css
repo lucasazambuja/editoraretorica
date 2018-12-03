@@ -606,7 +606,6 @@ html, body {
 .DivHomeImagemProd, .DivProductListImagemProd {
   height: auto;
 }
-.DivHomeNomeProd {
-  padding: 0px;
-  margin: 0px;
+.installments.font-regular > span {
+  display: inline-block;
 }

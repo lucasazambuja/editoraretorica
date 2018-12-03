@@ -86,13 +86,13 @@ var sF$=(function(){
       sPrice+="<div class=\"prices\">";
       sPrice+="  <div class=\"old-price font-regular\">De&nbsp; <span>"+FormatPrice(OriginalPrice,FC$.Currency)+"</span></div>";
       sPrice+="  <div class=\"price home-price font-bold\"><span class=\"home-price-por\">Por </span>"+FC$.Currency + " " + fnFormatNumber(iPriceInt) +","+ "<span class=\"home-price-cents\">" + PriceDecimal + "</span>" +"</div>";
-      if(iMaxParcels>1)sPrice+="  <div class=\"installments font-regular\"><strong><span class=\"installment-count\">"+ iMaxParcels +"</span>x</strong> <strong><span class=\"installment-price\">"+FormatPrice(CalculaParcelaJurosCompostos(Price,iMaxParcels),FC$.Currency)+"</span></strong>"+ sInterest +"</div>";
+      if(iMaxParcels>1)sPrice+="  <div class=\"installments font-regular\"><span class=\"installment-count\">"+ iMaxParcels +"</span>x <span class=\"installment-price\">"+FormatPrice(CalculaParcelaJurosCompostos(Price,iMaxParcels),FC$.Currency)+"</span>"+ sInterest +"</div>";
       sPrice+="</div>";
     }
     else{
       sPrice+="<div class=\"prices\">";
       sPrice+="  <div class=\"price home-price font-bold\">"+FC$.Currency + " " + fnFormatNumber(iPriceInt) +","+ "<span class=\"home-price-cents\">" + PriceDecimal + "</span>" +"</div>";
-      if(iMaxParcels>1)sPrice+="  <div class=\"installments font-regular\"><strong><span class=\"installment-count\">"+ iMaxParcels +"</span>x</strong> <strong><span class=\"installment-price\">"+FormatPrice(CalculaParcelaJurosCompostos(Price,iMaxParcels),FC$.Currency)+"</span></strong>"+ sInterest +"</div>";
+      if(iMaxParcels>1)sPrice+="  <div class=\"installments font-regular\"><span class=\"installment-count\">"+ iMaxParcels +"</span>x <span class=\"installment-price\">"+FormatPrice(CalculaParcelaJurosCompostos(Price,iMaxParcels),FC$.Currency)+"</span>"+ sInterest +"</div>";
       sPrice+="</div>";
     }
     if(idPrice)idPrice.innerHTML=sPrice;

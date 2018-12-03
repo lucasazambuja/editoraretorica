@@ -544,6 +544,7 @@ html, body {
 }
 .header-sidenav .EstListCat li {
   line-height: 5px;
+  border-bottom: 1px solid #e2e2e2;
 }
 .header-sidenav .EstListCat li a {
   color: #00A859;

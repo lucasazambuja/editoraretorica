@@ -439,16 +439,17 @@ html, body {
 #btnMenuMobile {
   line-height: 1em;
   color: #fff;
+  font-size: 25px;
 }
 .logo img {
   width: 100%;
 }
 @media only screen and (max-width: 576px) {
   #bar-head {
-    line-height: 60px;
+    line-height: 50px;
   }
   #bar-top-logo {
-    margin-top: 10px !important;
+    line-height: 1em;
   }
 }
 #bar-icons .dropdown {

@@ -326,13 +326,6 @@ var sF$=(function(){
     }
   }
   
-  //Show and Hide Banner Home
-  // function fnHideShowBannersHome(){
-  //   var FCHideHomeBanners = document.getElementById('FC-HideHomeBanners');
-  //   var FCShowHomeBanners = document.getElementById('FC-ShowHomeBanners');
-  //   // FCShowHomeBanners.innerHTML = FCHideHomeBanners.innerHTML;
-  // }
-  
   //Aviso de disponibilidade
   function fnLinkDisp(Estoque,IDProduto){
     if(Estoque==0){
@@ -536,7 +529,6 @@ var sF$=(function(){
     fnShowSearchBox:fnShowSearchBox,
     fnCloseSearchBox:fnCloseSearchBox,
     fnSearchInputGetFocus:fnSearchInputGetFocus,
-    fnSlideshowSwiper:fnSlideshowSwiper,
     fnFixedGridProductPage:fnFixedGridProductPage,
     fnStartDictation:fnStartDictation,
     fnChangeImages:fnChangeImages,
@@ -770,7 +762,7 @@ function fnFooter(){
   }
   else if(FC$.Page=="Home"){
     // sF$.fnHideShowBannersHome();
-    sF$.fnSlideshowSwiper();
+    // sF$.fnSlideshowSwiper();
   }
 
   jQuery(document).ready(function(){

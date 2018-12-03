@@ -541,8 +541,12 @@ html, body {
   text-transform: uppercase;
   font-weight: normal;
 }
+.header-sidenav .EstListCat li {
+  line-height: 5px;
+}
 .header-sidenav .EstListCat li a {
   color: #00A859;
+  line-height: 30px;
 }
 .header-sidenav .EstListCat span {
   position: relative;

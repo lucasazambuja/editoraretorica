@@ -575,7 +575,8 @@ html, body {
 .loginTopMob > a {
   display: inline-block;
   font-size: 16px;
-  text-transform: none;
+  text-transform: none !important;
   padding: 0;
   color: #fff;
+  text-decoration-line: underline;
 }

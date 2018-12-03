@@ -428,6 +428,7 @@ html, body {
   max-height: 100px;
   vertical-align: middle;
   margin: 0 auto;
+  width: 100%;
 }
 .logo img {
   width: 100%;
@@ -471,7 +472,6 @@ html, body {
 #search-form-bar input#autocomplete {
   display: inline-block;
   width: 100%;
-  padding: 0px 15px;
   border-radius: 15px;
   font-size: 18px;
   height: 40px;
@@ -479,9 +479,6 @@ html, body {
 }
 
 @media only screen and (max-width: 576px) {
-  #search-form-bar input#autocomplete {
-    width: 80%;
-  }
   #search-form-bar button#search-button {
     display: none;
   }
@@ -490,8 +487,8 @@ html, body {
 #search-form-bar button#search-button {
   background: no-repeat;
   position: absolute;
-  right: -20px;
-  top: 28px;
+  right: 0px;
+  top: 0px;
   height: 38px;
   border: none;
 }

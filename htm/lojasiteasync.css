@@ -442,6 +442,9 @@ html, body {
     margin-top: 10px !important;
   }
 }
+#bar-icons .dropdown {
+  display: inline-block;
+}
 #bar-icons span i {
   font-size: 26px;
   color: #fff;

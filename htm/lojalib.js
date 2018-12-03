@@ -1760,5 +1760,5 @@ function filterCloseNav(){
 }
 
 jQuery('.EstListCat li a').each(function() {
-  jQuery(this).before('<img src="https://editoraretorica-lojavirtualfc-com-br.cdn.ampproject.org/i/s/s3-sa-east-1.amazonaws.com/x1p/lojas/00040034/images/icon-banner-payment.svg?cccfc=2396e410" style="width: 46px;position: absolute;top: 10px;">')
+  jQuery(this).before('<img src="<BaseLoja>images/icon-banner-payment.svg?cccfc=2396e410" style="width: 46px;position: absolute;top: 10px;">')
 });

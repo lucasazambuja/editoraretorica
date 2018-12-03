@@ -646,3 +646,7 @@ html, body {
 .badgeLove > span {
   display: inline-block;
 }
+.badgesProd {
+  position: absolute;
+  right: -40px;
+}

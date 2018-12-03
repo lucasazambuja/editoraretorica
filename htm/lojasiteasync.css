@@ -537,8 +537,12 @@ html, body {
 #headerSidenav a {
   text-transform: uppercase;
   font-weight: normal;
-  font-size: 16px;
 }
 .header-sidenav .EstListCat li a {
+  color: #ddd;
+}
+.header-sidenav a {
+  padding: 10px 10px 10px 35px;
+  height: 30px;
   color: #ddd;
 }

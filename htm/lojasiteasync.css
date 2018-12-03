@@ -648,10 +648,18 @@ html, body {
   background: #64a360;
   color: #fff;
 }
+.badgeView {
+  color: #64a360;
+  line-height: 20px;
+}
 .badgeLove > span {
   display: inline-block;
 }
 .badgesProd {
   position: absolute;
   right: -5px;
+}
+span.icon-share-wishlist-off {
+  background-size: 70%;
+  background-position: center;
 }

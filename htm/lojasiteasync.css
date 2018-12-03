@@ -624,3 +624,6 @@ html, body {
   color: #66676d;
   font-size: 1em;
 }
+.product {
+  padding-right: 50px;
+}

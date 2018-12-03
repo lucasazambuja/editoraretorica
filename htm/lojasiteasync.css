@@ -459,7 +459,7 @@ html, body {
   line-height: 2em;
 }
 
-#bar-icons .bootstrap-style .dropdown-menu {
+#bar-icons .dropdown-menu {
   width: 230px;
   top: -30px !important;
   padding: 10px;

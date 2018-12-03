@@ -15,42 +15,44 @@ ImgOnError=FC$.PathImg+"nd";
 FCLib$.LazyLoadWaitImage=FC$.PathImg+"loading-lazy-load.gif?cccfc=1"; //loading usado no lazy load
 </script>
 
-<div class="container-fluid px-0">
-  <header>
-    <div class="top-bar">
-      <span>Whatsapp: <CompanyPhone> <span class="spacing"></span> Fale Conosco: <CompanyPhone></CompanyPhone></span>
-    </div>
-    <div id="bar-head">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-3 col-xs-12 m-auto text-center" id="bar-top-logo">
-            <img src="<BaseLoja>images/logo-topo.png" alt="Editora Retorica">
-          </div>
-          <div class="col-md-9 col-xs-12 m-auto">
-            <div class="row">
-              <div class="col-sm-8 px-2 col-xs-10 text-center m-auto" id="search-form-bar">
-                <form name="TopSearchForm" method="GET" id="autocomplete-form-bar" action="/listaprodutos.asp">
-                  <input type="hidden" name="idloja" value="<IDLojaNum>">
-                  <input type="hidden" name="digitada" value="true">
-                  <input type="text" id="autocomplete" value="<SearchText>" name="Texto" class="InputTextBusca" placeholder="Digite sua busca aqui">
-                  <button id="search-button" type="submit" aria-label="Buscar">                     
-                    <img src="<BaseLoja>images/lupa-icon.png" width="100%" height="auto" alt="Buscar" id="voiceSearchMGlass">
-                  </button>
-                </form>
-              </div>
-              <div class="col-sm-4 col-xs-12 text-center px-0">
-                <div id="bar-icons" class="text-center">
-                  <span><i class="fas fa-phone"></i></span>
-                  <span><a href="#" id="user-login"><i class="far fa-user"></i></a></span>
-                  <span><i class="fas fa-shopping-bag"></i></span>
+<div class="bootstrap-style">
+  <div class="container-fluid px-0">
+    <header>
+      <div class="top-bar">
+        <span>Whatsapp: <CompanyPhone> <span class="spacing"></span> Fale Conosco: <CompanyPhone></CompanyPhone></span>
+      </div>
+      <div id="bar-head">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-3 col-xs-12 m-auto text-center" id="bar-top-logo">
+              <img src="<BaseLoja>images/logo-topo.png" alt="Editora Retorica">
+            </div>
+            <div class="col-md-9 col-xs-12 m-auto">
+              <div class="row">
+                <div class="col-sm-8 px-2 col-xs-10 text-center m-auto" id="search-form-bar">
+                  <form name="TopSearchForm" method="GET" id="autocomplete-form-bar" action="/listaprodutos.asp">
+                    <input type="hidden" name="idloja" value="<IDLojaNum>">
+                    <input type="hidden" name="digitada" value="true">
+                    <input type="text" id="autocomplete" value="<SearchText>" name="Texto" class="InputTextBusca" placeholder="Digite sua busca aqui">
+                    <button id="search-button" type="submit" aria-label="Buscar">                     
+                      <img src="<BaseLoja>images/lupa-icon.png" width="100%" height="auto" alt="Buscar" id="voiceSearchMGlass">
+                    </button>
+                  </form>
+                </div>
+                <div class="col-sm-4 col-xs-12 text-center px-0">
+                  <div id="bar-icons" class="text-center">
+                    <span><i class="fas fa-phone"></i></span>
+                    <span><a href="#" id="user-login"><i class="far fa-user"></i></a></span>
+                    <span><i class="fas fa-shopping-bag"></i></span>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-  </header>
+    </header>
+  </div>
 </div>
 
 <div id="offcanvas-overlay" onclick="headerCloseNav();"></div>

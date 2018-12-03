@@ -1,17 +1,19 @@
 <p255>
-  <div class="DivHomeProd" <DataAttribute> id="DivProd<IDProduto>">
-    <div class="DivHomeImagemProd" id="DivImagemProdDouble<IDProduto>" onclick="NoCascate('<URLProd>');"></div>
-    <div class="DivHomeNomeProd" onclick="NoCascate('<URLProd>');">
-      <span class="HomeNomeProd text-overflow font-regular"><NomeProd></span>
-    </div>
-    <div class="DivHomePriceProd" style="white-space:nowrap;" onclick="NoCascate('<URLProd>');">
-      <div id="idProdPrice<IDProduto>"></div> 
-      <!-- <div class="PriceAVistaLista" id="ProdDesc<IDProduto>"></div> -->
-    </div>
-    <div class="home-spy-details-container">
-      <div class="DivHomeSpy" onclick='bCascate=true;FCLib$.OpenRWD("/listaprodutos.asp?idloja=<IDLoja>&sty=9&int=1&idproduto=<IDProduto>","Disp","width=700,height=700")'><a href="#Spy" rel="nofollow"><img  src="<BaseLoja>images/icon-preview.svg?cccfc=1" width="25" height="25" alt="Espiadinha - Fast Preview" title="Espiadinha - Fast Preview"></a></div>
-      <div class="DivHomeDetails"><a href="<URLProd>"><img  src="<BaseLoja>images/icon-more-details.svg?cccfc=1" width="25" height="25" alt="Mais Detalhes" title="Mais Detalhes"></a></div>
-      <div class="DivHome-wishlist"><wishlist></div>
+  <div class="bootstrap-style">
+    <div class="DivHomeProd" <DataAttribute> id="DivProd<IDProduto>">
+      <div class="DivHomeImagemProd" id="DivImagemProdDouble<IDProduto>" onclick="NoCascate('<URLProd>');"></div>
+      <div class="DivHomeNomeProd" onclick="NoCascate('<URLProd>');">
+        <span class="HomeNomeProd text-overflow font-regular"><NomeProd></span>
+      </div>
+      <div class="DivHomePriceProd" style="white-space:nowrap;" onclick="NoCascate('<URLProd>');">
+        <!-- <div id="idProdPrice<IDProduto>"></div>  -->
+        <!-- <div class="PriceAVistaLista" id="ProdDesc<IDProduto>"></div> -->
+      </div>
+      <div class="home-spy-details-container">
+        <div class="DivHomeSpy" onclick='bCascate=true;FCLib$.OpenRWD("/listaprodutos.asp?idloja=<IDLoja>&sty=9&int=1&idproduto=<IDProduto>","Disp","width=700,height=700")'><a href="#Spy" rel="nofollow"><img  src="<BaseLoja>images/icon-preview.svg?cccfc=1" width="25" height="25" alt="Espiadinha - Fast Preview" title="Espiadinha - Fast Preview"></a></div>
+        <div class="DivHomeDetails"><a href="<URLProd>"><img  src="<BaseLoja>images/icon-more-details.svg?cccfc=1" width="25" height="25" alt="Mais Detalhes" title="Mais Detalhes"></a></div>
+        <div class="DivHome-wishlist"><wishlist></div>
+      </div>
     </div>
   </div>
   <script>

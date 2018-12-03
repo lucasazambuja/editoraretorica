@@ -450,9 +450,6 @@ html, body {
 #bar-icons span i:hover {
   cursor: pointer;
 }
-#bar-icons .dropdown {
-  display: inline-block;
-}
 .top-bar > span > .spacing {
   padding-right: 10px;
   display: inline-block;

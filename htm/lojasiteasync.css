@@ -611,8 +611,12 @@ html, body {
 .installments.font-regular > span {
   display: inline-block;
 }
+.DivHomeNomeProd {
+  margin-bottom: 0px;
+}
 .DivHomeNomeProd .HomeNomeProd {
   font-size: 0.8em;
+  line-height: 1.2em;
 }
 .prodRef {
   font-size: 12px;

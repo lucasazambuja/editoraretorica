@@ -24,13 +24,42 @@ FCLib$.LazyLoadWaitImage=FC$.PathImg+"loading-lazy-load.gif?cccfc=1"; //loading 
       <div id="bar-head">
         <div class="container">
           <div class="row">
-            <div class="col-md-12 col-lg-3 m-auto text-center pt-2 pt-sm-0" id="bar-top-logo">
-              <button onclick="headerOpenNav();" class="d-inline-block d-sm-none" id="btnMenuMobile"><i class="fas fa-bars"></i></button>
+            <div class="col-md-6 col-sm-6 col-lg-3 text-center pt-2 pt-sm-0" id="bar-top-logo">
+              <button onclick="headerOpenNav();" class="d-inline-block d-lg-none" id="btnMenuMobile"><i class="fas fa-bars"></i></button>
               <img src="<BaseLoja>images/logo-topo.png" alt="Editora Retorica" onclick="NoCascate('<StoreDomain>');">
+            </div>
+            <div class="col-md-6 col-sm-16 col-xs-12 text-center px-0 d-lg-none">
+              <div id="bar-icons" class="text-center">
+                <span>
+                  <div class="dropdown">
+                    <button class="dropdown-toggle" type="button" id="dropdownMenuUser" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      <i class="fas fa-phone"></i>
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuUser">
+                      <a class="dropdown-item" href="#">Action</a>
+                      <a class="dropdown-item" href="#">Another action</a>
+                      <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
+                  </div>
+                </span>
+                <span>
+                  <div class="dropdown">
+                    <button class="dropdown-toggle" type="button" id="dropdownMenuUser" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      <i class="far fa-user"></i>
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuUser">
+                      <a class="dropdown-item" href="#">Action</a>
+                      <a class="dropdown-item" href="#">Another action</a>
+                      <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
+                  </div>
+                </span>
+                <span><i class="fas fa-shopping-bag"></i></span>
+              </div>
             </div>
             <div class="col-md-12 col-lg-9 m-auto">
               <div class="row">
-                <div class="col-md-8 col-sm-12 px-2 col-12 text-center m-auto" id="search-form-bar">
+                <div class="col-lg-8 col-md-12 col-sm-12 px-2 col-12 text-center m-auto" id="search-form-bar">
                   <form name="TopSearchForm" method="GET" id="autocomplete-form-bar" action="/listaprodutos.asp">
                     <input type="hidden" name="idloja" value="<IDLojaNum>">
                     <input type="hidden" name="digitada" value="true">
@@ -40,7 +69,7 @@ FCLib$.LazyLoadWaitImage=FC$.PathImg+"loading-lazy-load.gif?cccfc=1"; //loading 
                     </button>
                   </form>
                 </div>
-                <div class="col-md-4 col-sm-12 col-xs-12 text-center px-0">
+                <div class="col-lg-4 d-none d-lg-block text-center px-0">
                   <div id="bar-icons" class="text-center">
                     <span>
                       <div class="dropdown">

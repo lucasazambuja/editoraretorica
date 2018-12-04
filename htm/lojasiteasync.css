@@ -620,6 +620,7 @@ html, body {
 }
 .DivHomePriceProd {
   border: none;
+  height: auto;
 }
 .DivHomePriceProd .prices strong {
   font-weight: normal;
